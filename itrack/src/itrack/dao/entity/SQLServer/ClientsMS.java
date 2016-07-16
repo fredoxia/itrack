@@ -12,9 +12,16 @@ public class ClientsMS implements Serializable {
     private String pinyin;
     private int region_id;
     private boolean deleted;
+    private String phoneNum;
     private RegionMS region = new RegionMS();
     
     
+	public String getPhoneNum() {
+		return phoneNum;
+	}
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
+	}
 	public String getPinyin() {
 		return pinyin;
 	}
