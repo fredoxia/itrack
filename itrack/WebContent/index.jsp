@@ -105,9 +105,9 @@ function validateSearch(){
 					<table data-role="table" id="table-column-toggle" class="ui-responsive table-stroke">
 						<thead>
 					       <tr>
-					         <th width="30%" data-priority="1">客户名字</th>
-					         <th width="20%" data-priority="3">地区</th>
-					         <th width="50%" data-priority="2">电话</th>
+					         <th width="28%" data-priority="1">客户名字</th>
+					         <th width="45%" data-priority="2">地区</th>
+					         <th width="27%" data-priority="3">电话</th>
 					       </tr>
 					     </thead>
 					     <tbody id="clientsBody">

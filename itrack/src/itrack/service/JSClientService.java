@@ -39,7 +39,7 @@ public class JSClientService {
 	}
 	
 	private List<ClientJinSuanVO> transferClients(List<ClientsMS> clients){
-		List<ClientJinSuanVO> clientVO = new ArrayList<>();
+		List<ClientJinSuanVO> clientVO = new ArrayList<ClientJinSuanVO>();
 		if (clients != null && clients.size() > 0){
 			for (ClientsMS client : clients){
 				String clientName = client.getName();

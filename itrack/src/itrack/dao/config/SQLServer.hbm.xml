@@ -9,6 +9,7 @@
         <property name="name" column="name" type="string"/>
         <property name="pinyin" column="pinyin" type="string"/>
         <property name="phoneNum" column="phone_number" type="string"/>
+        <property name="address" column="address" type="string"/>
         <property name="region_id" column="region_id" type="integer"/>
     </class>
     <class name="RegionMS" table="Region" schema="dbo">

@@ -13,9 +13,15 @@ public class ClientsMS implements Serializable {
     private int region_id;
     private boolean deleted;
     private String phoneNum;
+    private String address;
     private RegionMS region = new RegionMS();
     
-    
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 	public String getPhoneNum() {
 		return phoneNum;
 	}

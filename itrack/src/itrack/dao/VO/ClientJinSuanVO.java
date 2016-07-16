@@ -17,7 +17,16 @@ public class ClientJinSuanVO implements Serializable{
 	public ClientJinSuanVO(ClientsMS clientsMS){
 		this.clientId = clientsMS.getClient_id();
 		this.clientName = clientsMS.getName();
-		this.regionName = clientsMS.getRegion().getName();
+		String regionName = clientsMS.getRegion().getName();
+		String address = clientsMS.getAddress();
+		StringBuffer thisAddress = new StringBuffer("");
+		
+		if (!regionName.trim().equals(""))
+			thisAddress.append(regionName + " |");
+		if (!address.trim().equals(""))
+			thisAddress.append(" " + address);
+
+		this.regionName = thisAddress.toString();
 		String phoneNum = clientsMS.getPhoneNum();
 		if (phoneNum == null || phoneNum.trim().equals(""))
 			phoneNum = "-";
